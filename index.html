@@ -3,46 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Artigos — Darliane R. Cunha</title>
-  <meta name="description" content="Página de apresentação de artigos científicos com resumos em inglês e português.">
+  <title>Dashboard de Divulgação Científica — Darliane R. Cunha</title>
+  <meta name="description" content="Dashboard de divulgação científica — resumos em português de artigos publicados em inglês.">
   <style>
-    :root{
-      --bg:#0b1020;
-      --card:#111731;
-      --muted:#9fb0d3;
-      --primary:#7aa2ff;
-      --accent:#9bffef;
-      --ink:#e9f0ff;
-      --chip:#1a2243;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;line-height:1.6}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
+    :root{--bg:#0b1020;--card:#111731;--muted:#9fb0d3;--primary:#7aa2ff;--accent:#9bffef;--ink:#e9f0ff;--chip:#1a2243}
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     .wrap{max-width:1000px;margin:0 auto;padding:28px}
-    header{background:linear-gradient(135deg,#152250, #0e1632);border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 40px rgba(0,0,0,.35);border-radius:18px;padding:28px 24px;margin:18px 0 26px}
-    h1{margin:0 0 8px;font-weight:700;letter-spacing:.2px}
-    .sub{margin:0;color:var(--muted)}
+    header{background:linear-gradient(135deg,#152250,#0e1632);border:1px solid rgba(255,255,255,.08);box-shadow:0 20px 40px rgba(0,0,0,.35);border-radius:18px;padding:28px 24px;margin:18px 0 26px}
+    h1{margin:0 0 8px;font-weight:700;letter-spacing:.2px} .sub{margin:0;color:var(--muted)}
+    .hero{margin-top:12px;color:#cfe0ff}
     .grid{display:grid;grid-template-columns:1fr;gap:18px}
-    @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr} }
+    @media(min-width:860px){.grid{grid-template-columns:1fr 1fr}}
     .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:20px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
     .title{font-size:1.05rem;margin:.2rem 0 .4rem;font-weight:600}
     .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
     .chip{background:var(--chip);border:1px solid rgba(255,255,255,.08);padding:4px 10px;border-radius:999px;font-size:.8rem;color:var(--muted)}
-    .journal{color:var(--ink)}
-    .issn{opacity:.8}
     .year{background:rgba(122,162,255,.13);border:1px solid rgba(122,162,255,.35);color:#cfe0ff}
     details{background:rgba(255,255,255,.03);border:1px dashed rgba(255,255,255,.15);border-radius:14px;padding:12px 14px}
     summary{cursor:pointer;font-weight:600;color:var(--primary)}
-    .lang{font-size:.82rem;color:var(--muted);margin-left:6px}
     .sdgs{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 2px}
     .sdg{font-size:.75rem;padding:3px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#cfe0ff}
     footer{opacity:.8;color:var(--muted);margin:28px 0 8px;text-align:center}
     .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
     .btn{display:inline-block;padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.02);color:var(--ink);text-decoration:none}
     .btn:hover{background:rgba(255,255,255,.06)}
-    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:.86rem}
-    .kw{margin-top:10px;font-size:.9rem;color:var(--muted)}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:.86rem}
   </style>
 </head>
 <body>
@@ -50,131 +36,107 @@
     <header>
       <div class="topbar">
         <div>
-          <h1>Artigos selecionados</h1>
-          <p class="sub">Resumos em inglês e português • Portos, sustentabilidade e ODS</p>
+          <h1>Dashboard de Divulgação Científica</h1>
         </div>
         <nav>
           <a class="btn" href="#marine-policy">Marine Policy</a>
           <a class="btn" href="#rsms">Regional Studies in Marine Science</a>
-          <a class="btn" href="#rgsa">Revista de Gestão – RGSA</a>
+          <a class="btn" href="#rgsa">RGSA</a>
           <a class="btn" href="#gesec">Gestão &amp; Secretariado</a>
-          <a class="btn" href="#ssho">Social Sciences &amp; Humanities Open</a>
-          <a class="btn" href="#eds">Environment, Development and Sustainability</a>
+          <a class="btn" href="#ssho">SS&amp;HO</a>
+          <a class="btn" href="#eds">E D &amp; S</a>
         </nav>
+      </div>
+      <div class="hero">
+        <p>Sou Darliane Cunha, professora da UFMA e líder do SDG Hub, em parceria com o professor Dr. Clóvis Oliveira. Nosso grupo de pesquisa dedica-se ao desenvolvimento de soluções e indicadores estratégicos alinhados aos Objetivos de Desenvolvimento Sustentável (ODS), com a missão de transformar portos em motores de energia limpa e inovação sustentável.<br>Minha atuação concentra-se em Sustentabilidade e ODS, com foco na análise de estratégias de transição energética, bem como em inovação e governança portuária.<br><a href="https://linkme.bio/darlianecunha" rel="noopener">linkme.bio/darlianecunha</a><br>O objetivo deste dashboard é apresentar um resumo, em português, dos principais artigos publicados em inglês, ampliando a visibilidade das nossas pesquisas.<br>Agradecemos à FAPEMA e a EMAP pelo apoio fundamental ao desenvolvimento dos nossos projetos.</p>
       </div>
     </header>
 
-    <section class="grid" aria-label="Lista de artigos">
-      <!-- Article 1 -->
-      <article class="card" id="marine-policy" aria-labelledby="t1">
-        <div class="meta">
-          <span class="chip journal"><strong>Marine Policy</strong> <span class="issn mono">(ISSN 0308-597X)</span></span>
-          <span class="chip year" aria-label="Ano de publicação">2025</span>
-        </div>
-        <h2 class="title" id="t1">SDG attributes: A sustainability assessment framework for Brazilian ports</h2>
-        <div class="sdgs" aria-label="ODS relacionados">
-          <span class="sdg">SDG 7</span><span class="sdg">SDG 8</span><span class="sdg">SDG 9</span><span class="sdg">SDG 11</span><span class="sdg">SDG 12</span><span class="sdg">SDG 13</span><span class="sdg">SDG 14</span><span class="sdg">SDG 17</span>
-        </div>
-        <p class="kw"><strong>Palavras‑chave:</strong> Sustentabilidade portuária; Objetivos de Desenvolvimento Sustentável (ODS); Indicadores de sustentabilidade; Resiliência portuária; Desenvolvimento portuário sustentável; Política marítima.</p>
-        <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.1016/j.marpol.2025.106841" rel="noopener">https://doi.org/10.1016/j.marpol.2025.106841</a></p>
-        <details open>
-          <summary>Resumo <span class="lang">(Português)</span></summary>
-          <p>O estudo desenvolve e aplica um modelo de índice de sustentabilidade especificamente desenhado para o setor portuário, alinhado aos Objetivos de Desenvolvimento Sustentável (ODS 7, 8, 9, 11, 12, 13, 14 e 17). O modelo integra 20 dimensões temáticas e 84 indicadores, possibilitando uma avaliação quantitativa do desempenho de sustentabilidade dos portos. Foi aplicado a seis portos brasileiros, que respondem por 30% da movimentação de cargas do país em 2023. Os resultados mostram que os Portos B e E apresentaram a maior aderência aos princípios de sustentabilidade, sobretudo em parcerias (ODS 17) e consumo responsável (ODS 12). Em contraste, evidenciaram-se lacunas relevantes em ação climática (ODS 13) e adoção de energia limpa (ODS 7). As evidências apontam áreas estratégicas para aprimoramentos e oferecem um framework prático para apoiar decisões e políticas no setor portuário. Ao conectar práticas operacionais à agenda global de sustentabilidade, o modelo fornece insights acionáveis para fortalecer a governança e a resiliência das operações portuárias, constituindo uma ferramenta replicável para autoridades portuárias e formuladores de políticas.</p>
-        </details>
-      </article>
+    <main>
+      <section class="grid" aria-label="Lista de artigos">
+        
+    <article class="card" id="marine-policy" aria-labelledby="marine-policy-t">
+      <div class="meta">
+        <span class="chip journal"><strong>Marine Policy (ISSN 0308-597X)</strong></span>
+        <span class="chip year">2025</span>
+      </div>
+      <h2 class="title" id="marine-policy-t">SDG attributes: A sustainability assessment framework for Brazilian ports</h2>
+      <div class="sdgs"><span class="sdg">ODS 7</span><span class="sdg">ODS 8</span><span class="sdg">ODS 9</span><span class="sdg">ODS 11</span><span class="sdg">ODS 12</span><span class="sdg">ODS 13</span><span class="sdg">ODS 14</span><span class="sdg">ODS 17</span></div>
+      <div class="sdgs" aria-label="Palavras-chave"><span class="sdg">Sustentabilidade portuária</span><span class="sdg">Objetivos de Desenvolvimento Sustentável (ODS)</span><span class="sdg">Indicadores de sustentabilidade</span><span class="sdg">Resiliência portuária</span><span class="sdg">Desenvolvimento portuário sustentável</span><span class="sdg">Política marítima</span></div>
+      <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.1016/j.marpol.2025.106841" rel="noopener">https://doi.org/10.1016/j.marpol.2025.106841</a></p>
+      <details><summary>Resumo</summary><p>O estudo desenvolve e aplica um modelo de índice de sustentabilidade especificamente desenhado para o setor portuário...</p></details>
+    </article>
+    
 
-      <!-- Article 2 -->
-      <article class="card" id="rsms" aria-labelledby="t2">
-        <div class="meta">
-          <span class="chip journal"><strong>Regional Studies in Marine Science</strong> <span class="issn mono">(ISSN 2352-4855)</span></span>
-          <span class="chip year">2024</span>
-        </div>
-        <h2 class="title" id="t2">A Bibliometric Analysis of Sustainable Development Goals in the Maritime Industry and Port Sector</h2>
-        <div class="sdgs">
-          <span class="sdg">SDG 7</span><span class="sdg">SDG 9</span><span class="sdg">SDG 11</span><span class="sdg">SDG 12</span><span class="sdg">SDG 13</span><span class="sdg">SDG 14</span><span class="sdg">SDG 8</span><span class="sdg">SDG 17</span>
-        </div>
-        <p class="kw"><strong>Palavras‑chave:</strong> Objetivos de Desenvolvimento Sustentável; Sustentabilidade; Sustentabilidade ambiental; Indústria marítima; Portos.</p>
-        <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.1016/j.rsma.2023.103319" rel="noopener">https://doi.org/10.1016/j.rsma.2023.103319</a></p>
-        <details>
-          <summary>Resumo <span class="lang">(Português)</span></summary>
-          <p>Este artigo realiza uma revisão abrangente da literatura, identificando tendências de sustentabilidade alinhadas aos Objetivos de Desenvolvimento Sustentável (ODS) na indústria marítima e no setor portuário. Foi conduzida uma análise bibliométrica com o uso dos softwares IRaMuTeQ e VOSviewer. A avaliação das publicações revelou associações robustas com termos como “modelo cidade‑porto”, “economia circular”, “economia azul” e “eficiência energética”, que despontam como direções dominantes. Uma análise qualitativa — apoiada em classificações por palavras‑chave, autores, conteúdo e origem das publicações — complementa os resultados. Observa‑se proeminência do contexto europeu, refletindo a ênfase acadêmica nos numerosos portos da região. Grande parte dos estudos está vinculada a editoras como MDPI, Taylor & Francis e Elsevier. Áreas com alto potencial de pesquisa concentram‑se em sustentabilidade, gestão e políticas marítimas. Apesar do aumento das publicações, persiste uma lacuna acadêmica, especialmente no alinhamento das operações portuárias às ambições da Agenda 2030.</p>
-        </details>
-      </article>
+    <article class="card" id="rsms" aria-labelledby="rsms-t">
+      <div class="meta">
+        <span class="chip journal"><strong>Regional Studies in Marine Science (ISSN 2352-4855)</strong></span>
+        <span class="chip year">2024</span>
+      </div>
+      <h2 class="title" id="rsms-t">A Bibliometric Analysis of Sustainable Development Goals in the Maritime Industry and Port Sector</h2>
+      <div class="sdgs"><span class="sdg">ODS 7</span><span class="sdg">ODS 9</span><span class="sdg">ODS 11</span><span class="sdg">ODS 12</span><span class="sdg">ODS 13</span><span class="sdg">ODS 14</span><span class="sdg">ODS 8</span><span class="sdg">ODS 17</span></div>
+      <div class="sdgs" aria-label="Palavras-chave"><span class="sdg">Objetivos de desenvolvimento sustentável</span><span class="sdg">Sustentabilidade</span><span class="sdg">Sustentabilidade ambiental</span><span class="sdg">Indústria marítima</span><span class="sdg">Portos</span></div>
+      <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.1016/j.rsma.2023.103319" rel="noopener">https://doi.org/10.1016/j.rsma.2023.103319</a></p>
+      <details><summary>Resumo</summary><p>Este artigo realiza uma revisão abrangente da literatura, identificando tendências de sustentabilidade...</p></details>
+    </article>
+    
 
-      <!-- Article 3 -->
-      <article class="card" id="rgsa" aria-labelledby="t3">
-        <div class="meta">
-          <span class="chip journal"><strong>Revista De Gestão – RGSA</strong> <span class="issn mono">(ISSN 1981-982X)</span></span>
-          <span class="chip year">2024</span>
-        </div>
-        <h2 class="title" id="t3">Sustainable Practices in Brazilian Ports: Aligning with SDGs 9, 13, and 14</h2>
-        <div class="sdgs">
-          <span class="sdg">SDG 9</span><span class="sdg">SDG 13</span><span class="sdg">SDG 14</span>
-        </div>
-        <p class="kw"><strong>Palavras‑chave:</strong> Objetivos de Desenvolvimento Sustentável; Inovação; Ação Climática; Vida Marinha; Setor Portuário.</p>
-        <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.24857/rgsa.v18n11-096" rel="noopener">https://doi.org/10.24857/rgsa.v18n11-096</a></p>
-        <details>
-          <summary>Resumo <span class="lang">(Português)</span></summary>
-          <p>Este estudo analisou a divulgação dos Objetivos de Desenvolvimento Sustentável (ODS) em relatórios publicados por portos e terminais com os maiores volumes de movimentação de carga. A pesquisa, de natureza exploratória e descritiva, utilizou análise de conteúdo de relatórios de sustentabilidade, integrados e anuais de portos públicos brasileiros (BPP) e terminais portuários privados (PPT). Evidenciou‑se alinhamento ao ODS 9 por meio de investimentos em P&amp;D e adoção de tecnologias (por exemplo, radares e câmeras); ao ODS 13, com iniciativas de redução de emissões de GEE, aumento de eficiência operacional e apoio à transição energética; e uma lacuna relativa no ODS 14, frente à interface porto‑ecossistemas marinhos.</p>
-        </details>
-      </article>
+    <article class="card" id="gesec" aria-labelledby="gesec-t">
+      <div class="meta">
+        <span class="chip journal"><strong>Revista Gestão e Secretariado (ISSN 2178-9010)</strong></span>
+        <span class="chip year">2024</span>
+      </div>
+      <h2 class="title" id="gesec-t">Challenges and strategies for SDG 14 in Brazilian ports</h2>
+      <div class="sdgs"><span class="sdg">ODS 14</span></div>
+      <div class="sdgs" aria-label="Palavras-chave"><span class="sdg">Objetivos de Desenvolvimento Sustentável</span><span class="sdg">ODS 14</span><span class="sdg">Sustentabilidade</span><span class="sdg">Economia Azul</span><span class="sdg">Portos</span></div>
+      <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.7769/gesec.v15i12.4593" rel="noopener">https://doi.org/10.7769/gesec.v15i12.4593</a></p>
+      <details><summary>Resumo</summary><p>Este estudo avalia a implementação dos ODS no setor portuário brasileiro, com foco no ODS 14 (Vida na Água)...</p></details>
+    </article>
+    
 
-      <!-- Article 4 -->
-      <article class="card" id="gesec" aria-labelledby="t4">
-        <div class="meta">
-          <span class="chip journal"><strong>Revista Gestão &amp; Secretariado</strong> <span class="issn mono">(ISSN 2178-9010)</span></span>
-          <span class="chip year">2024</span>
-        </div>
-        <h2 class="title" id="t4">Challenges and strategies for SDG 14 in Brazilian ports</h2>
-        <div class="sdgs">
-          <span class="sdg">SDG 14</span>
-        </div>
-        <p class="kw"><strong>Palavras‑chave:</strong> Objetivos de Desenvolvimento Sustentável; ODS 14; Sustentabilidade; Economia Azul; Portos.</p>
-        <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.7769/gesec.v15i12.4593" rel="noopener">https://doi.org/10.7769/gesec.v15i12.4593</a></p>
-        <details>
-          <summary>Resumo <span class="lang">(Português)</span></summary>
-          <p>Este estudo avalia a implementação do ODS 14 (Vida na Água) no setor portuário brasileiro com base em entrevistas semiestruturadas (n=8). As práticas identificadas alinham‑se às metas 14.1, 14.2 e 14.5, incluindo certificação ISO 14001, monitoramento da vida aquática e da qualidade da água, gestão de resíduos e educação ambiental. Iniciativas voluntárias, adesão ao Pacto Global da ONU e parcerias com academia e órgãos reguladores reforçam o compromisso. Persistem desafios em monitoramento de ruído ambiental, conservação de APPs e adoção de eDNA para biodiversidade. Recomenda‑se aprimorar padrões de relato e metas SMART para fortalecer o alinhamento ao ODS 14.</p>
-        </details>
-      </article>
+    <article class="card" id="rgsa" aria-labelledby="rgsa-t">
+      <div class="meta">
+        <span class="chip journal"><strong>Revista De Gestão – RGSA (ISSN 1981-982X)</strong></span>
+        <span class="chip year">2024</span>
+      </div>
+      <h2 class="title" id="rgsa-t">Sustainable Practices in Brazilian Ports: Aligning with SDGs 9, 13, and 14</h2>
+      <div class="sdgs"><span class="sdg">ODS 9</span><span class="sdg">ODS 13</span><span class="sdg">ODS 14</span></div>
+      <div class="sdgs" aria-label="Palavras-chave"><span class="sdg">Objetivos de Desenvolvimento Sustentável</span><span class="sdg">Inovação</span><span class="sdg">Ação Climática</span><span class="sdg">Vida Marinha</span><span class="sdg">Setor Portuário</span></div>
+      <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.24857/rgsa.v18n11-096" rel="noopener">https://doi.org/10.24857/rgsa.v18n11-096</a></p>
+      <details><summary>Resumo</summary><p>Este estudo teve como objetivo analisar a divulgação dos Objetivos de Desenvolvimento Sustentável...</p></details>
+    </article>
+    
 
-      <!-- Article 5 -->
-      <article class="card" id="ssho" aria-labelledby="t5">
-        <div class="meta">
-          <span class="chip journal"><strong>Social Sciences &amp; Humanities Open</strong> <span class="issn mono">(ISSN 2590-2911)</span></span>
-          <span class="chip year">2023</span>
-        </div>
-        <h2 class="title" id="t5">Photovoltaic electronic waste in Brazil: circular economy challenges, potential and obstacles</h2>
-        <div class="sdgs">
-          <span class="sdg">SDG 7</span><span class="sdg">SDG 9</span><span class="sdg">SDG 12</span><span class="sdg">SDG 13</span>
-        </div>
-        <p class="kw"><strong>Palavras‑chave:</strong> Resíduos eletrônicos; Energia fotovoltaica em fim de vida; Painéis solares; Energia renovável.</p>
-        <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.1016/j.ssaho.2023.100456" rel="noopener">https://doi.org/10.1016/j.ssaho.2023.100456</a></p>
-        <details>
-          <summary>Resumo <span class="lang">(Português)</span></summary>
-          <p>A produção de energia fotovoltaica (FV) é madura e promissora, mas o descarte de painéis gera desafios relevantes de gestão de resíduos, dada a presença de metais e materiais tóxicos. O artigo discute impactos ambientais e a reciclagem de painéis FV no Brasil e argumenta que, além de soluções tecnológicas e melhorias de processo para o fim de vida, são necessárias políticas públicas e regulações específicas para preparar e incentivar aplicações adequadas de tratamento de resíduos industriais.</p>
-        </details>
-      </article>
+    <article class="card" id="eds" aria-labelledby="eds-t">
+      <div class="meta">
+        <span class="chip journal"><strong>Environment, Development and Sustainability (ISSN 1387-585X / e-ISSN 1573-2975)</strong></span>
+        <span class="chip year">2023</span>
+      </div>
+      <h2 class="title" id="eds-t">Sustainability practices for SDGs: a study of Brazilian ports</h2>
+      <div class="sdgs"><span class="sdg">ODS 7</span><span class="sdg">ODS 8</span><span class="sdg">ODS 9</span><span class="sdg">ODS 11</span><span class="sdg">ODS 12</span><span class="sdg">ODS 13</span><span class="sdg">ODS 14</span></div>
+      <div class="sdgs" aria-label="Palavras-chave"><span class="sdg">Objetivos de desenvolvimento sustentável</span><span class="sdg">Relatório de sustentabilidade</span><span class="sdg">Práticas ambientais</span><span class="sdg">Portos</span></div>
+      <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.1007/s10668-023-03126-y" rel="noopener">https://doi.org/10.1007/s10668-023-03126-y</a></p>
+      <details><summary>Resumo</summary><p>Este artigo identifica práticas de sustentabilidade relacionadas aos ODS por meio de análise de conteúdo...</p></details>
+    </article>
+    
 
-      <!-- Article 6 -->
-      <article class="card" id="eds" aria-labelledby="t6">
-        <div class="meta">
-          <span class="chip journal"><strong>Environment, Development and Sustainability</strong> <span class="issn mono">(ISSN 1387-585X / e-ISSN 1573-2975)</span></span>
-          <span class="chip year">2023</span>
-        </div>
-        <h2 class="title" id="t6">Sustainability practices for SDGs: a study of Brazilian ports</h2>
-        <div class="sdgs">
-          <span class="sdg">SDG 7</span><span class="sdg">SDG 8</span><span class="sdg">SDG 9</span><span class="sdg">SDG 11</span><span class="sdg">SDG 12</span><span class="sdg">SDG 13</span><span class="sdg">SDG 14</span>
-        </div>
-        <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.1007/s10668-023-03126-y" rel="noopener">https://doi.org/10.1007/s10668-023-03126-y</a></p>
-        <details>
-          <summary>Resumo <span class="lang">(Português)</span></summary>
-          <p>Este artigo identifica práticas de sustentabilidade relacionadas aos ODS a partir de análise de conteúdo de relatórios publicados por Autoridades Portuárias Públicas brasileiras (2017–2020). A amostra inclui dez autoridades que administram dezessete portos responsáveis por 76% da carga nacional movimentada em 2021. Estudo exploratório e descritivo com análise qualitativa apoiada pelo IRaMuTeQ. Constatou‑se maior incidência dos ODS 8, 11 e 14; na prática, os ODS entraram na agenda a partir de 2018 e, em 2020, apenas quatro das dez autoridades ainda reportavam sobre o tema. As iniciativas permanecem, em geral, incipientes.</p>
-        </details>
-      </article>
-    </section>
+    <article class="card" id="ssho" aria-labelledby="ssho-t">
+      <div class="meta">
+        <span class="chip journal"><strong>Social Sciences & Humanities Open (ISSN 2590-2911)</strong></span>
+        <span class="chip year">2023</span>
+      </div>
+      <h2 class="title" id="ssho-t">Photovoltaic electronic waste in Brazil: circular economy challenges, potential and obstacles</h2>
+      <div class="sdgs"><span class="sdg">ODS 7</span><span class="sdg">ODS 9</span><span class="sdg">ODS 12</span><span class="sdg">ODS 13</span></div>
+      <div class="sdgs" aria-label="Palavras-chave"><span class="sdg">Resíduos eletrônicos</span><span class="sdg">Energia fotovoltaica em fim de vida</span><span class="sdg">Painéis solares</span><span class="sdg">Energia renovável</span></div>
+      <p><strong>Artigo completo:</strong> <a href="https://doi.org/10.1016/j.ssaho.2023.100456" rel="noopener">https://doi.org/10.1016/j.ssaho.2023.100456</a></p>
+      <details><summary>Resumo</summary><p>A produção de energia fotovoltaica (FV) é uma tecnologia promissora e madura...</p></details>
+    </article>
+    
+      </section>
+    </main>
 
     <footer>
-      <p>© 2025 · GitHub Pages‑ready. Publique este arquivo como <span class="mono">index.html</span>.</p>
+      <p>© 2025 · Publique este arquivo como <span class="mono">index.html</span> no GitHub Pages.</p>
     </footer>
   </div>
 </body>
